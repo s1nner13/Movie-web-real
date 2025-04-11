@@ -103,7 +103,7 @@ export const Searchbar = ({ isDark, setIsDark }: SearchType) => {
                           key={item.id}
                           href={`/GenreFilter?genre=${item.id}`}
                         >
-                          <Badge variant="outline">{item.name} &gt;</Badge>
+                          <Badge variant="outline">{item.name} &gt; </Badge>
                         </Link>
                       );
                     })}
@@ -164,7 +164,7 @@ export const Searchbar = ({ isDark, setIsDark }: SearchType) => {
                     href={`/seeAllResult?searchValue=${searchValue}`}
                     className="lg:w-[212px] lg:h-[40px]"
                   >
-                    See all results "{searchValue}"
+                    See all results {searchValue}
                   </Link>
                 </div>
               )}

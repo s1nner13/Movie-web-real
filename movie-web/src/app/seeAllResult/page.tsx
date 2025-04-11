@@ -68,7 +68,7 @@ export default function Home() {
       <div className="w-[335px] lg:w-[1440px] lg:flex lg:flex-col lg:gap-8 lg:px-20 ">
         <div className="flex flex-col gap-[28px] ">
           <p className="text-[30px] font-semibold">Search results</p>
-          <p>results for "{searchValue}"</p>
+          <p>results for {searchValue}</p>
         </div>
         <div className="lg:flex lg:gap-[28px]">
           <div className="lg:-w-[804px] lg:h-[826px] ">
