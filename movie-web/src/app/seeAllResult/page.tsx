@@ -72,7 +72,7 @@ export default function Home() {
         </div>
         <div className="lg:flex lg:gap-[28px]">
           <div className="lg:-w-[804px] lg:h-[826px] ">
-            {searchValue.length > 0 && (
+            {searchValue && searchValue.length > 0 && (
               <div className="grid grid-cols-2 gap-5 mt-[40px] lg:grid lg:grid-cols-5 lg:gap-8">
                 {searchResults.slice(10).map((movie) => {
                   return (

@@ -53,7 +53,7 @@ export default function Home() {
           <p className="text-[24px] font-semibold">Top Rated</p>
         </div>
         <div className="grid grid-cols-2 gap-5 mt-[40px] lg:grid lg:grid-cols-5 lg:gap-8 ">
-          {movies.map((movie, index) => (
+          {movies.map((movie) => (
             <Link
               key={movie.id}
               href={`/movieDetails/${movie.id}`}

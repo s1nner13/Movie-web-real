@@ -39,6 +39,7 @@ type Casting = {
 };
 export type Trailer = {
   key: string;
+  type: string;
 };
 const ACCESS_TOKEN =
   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYzgxODUwMTFjZDUyNTJiNGViY2I4ZjA4OWJkMWRlOSIsIm5iZiI6MTc0MzQwMzI2OS43NjYsInN1YiI6IjY3ZWEzOTA1YTk4ZGM4MTNiMGY3MDQxMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.j1XLqvV8qnfJkxisJJn-f7LvyMPNnPkMeUkdvzEL3mU";
@@ -109,7 +110,7 @@ export default function Home() {
           }
         );
         const trailerData = data.results.find(
-          (video) => video.type === "Trailer"
+          (video: Trailer) => video.type === "Trailer"
         );
         if (trailerData) {
           setTrailer(trailerData.key);
